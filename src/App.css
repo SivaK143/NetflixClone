@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+
+.header{
+  height: 100px;
+  background-color: black;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header>div{
+  width: 100%;
+  margin-left: 4vmax;
+}
+
+.header div a{
+  margin-right: 30px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.header div a::after{
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: crimson;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s ease-out;
+
+}
+
+.header div a:hover::after{
+  width: 95%;
+}
+
+/* content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.5s; */
+
+
+.header img{
+ height: 100%;
+}
+.icon{
+  height: 50%;
+  color: white;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.icon:hover{
+  color: red;
+}
+
+/* banner */
+.banner{
+  height: 400px;
+  background-color: black;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  
+}
+
+.banner h1{
+  width: 50%;
+  font-size: 4rem;
+  z-index: 10;
+}
+
+.banner p{
+  width: 50%;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  z-index: 10;
+  font-weight: 100;
+  word-spacing: 2px;
+}
+
+.banner::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.4;
+}
+.row{
+  background-color: black;
+  color: white;
+}
+
+.row h2{
+  padding: 20px;
+}
+
+.card{
+
+  width: 200px;
+  cursor: pointer;
+  margin: 0.3rem;
+  padding: 0.5rem 0.2rem;
+  transition: transform 0.5s;
+ 
+}
+
+.card:hover{
+  transform: translateY(-5px) scale(1.02);
+}
+
+
+.row > div{
+  display: flex;
+  overflow-x: auto;
+
+}
+
+/* .banner{
+  background: url("https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.banner{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner svg{
+  font-size: 20px;
+}
+
+.banner>div{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+
+}
+
+button{
+  width: 150px;
+  font-size: 1rem;
+  padding: 10px;
+  z-index: 10;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.4;
+}
